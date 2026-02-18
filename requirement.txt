@@ -12,3 +12,8 @@ openai==1.57.0
 
 python-dotenv==1.0.1
 requests==2.32.3
+
+langchain_openai
+langchain_google_genai
+langchain-anthropic
+langchain_core

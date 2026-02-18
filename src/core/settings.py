@@ -25,6 +25,7 @@ class Settings(BaseSettings):
     trino_session_properties: str = Field(default="{}", alias="TRINO_SESSION_PROPERTIES")
 
     # LLM
+    llm_provider: str = Field(default="openai", alias="LLM_PROVIDER")
     openai_api_key: str = Field(alias="OPENAI_API_KEY")
     openai_model: str = Field(default="gpt-4.1-mini", alias="OPENAI_MODEL")
     openai_temperature: float = Field(default=0.0, alias="OPENAI_TEMPERATURE")
