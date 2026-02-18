@@ -96,8 +96,8 @@ TRINO_HTTP_SCHEME=http
 # TRINO_SSL=true
 
 # ---- LLM ----
-OPENAI_API_KEY=your_key_here
-OPENAI_MODEL=gpt-4o-mini   # example; choose your model
+AI_API_KEY=your_key_here
+AI_MODEL=gpt-4o-mini   # example; choose your model
 LLM_TEMPERATURE=0
 
 # ---- Tuning behavior ----
@@ -112,7 +112,7 @@ RETURN_PLAN_SUMMARY=true
 Go to:
 	•	https://platform.openai.com/apps-manage
 
-Create an API key and paste it into OPENAI_API_KEY in your .env.
+Create an API key and paste it into AI_API_KEY in your .env.
 
 ## Run: FastAPI service
 ```

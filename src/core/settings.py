@@ -26,8 +26,8 @@ class Settings(BaseSettings):
 
     # LLM
     llm_provider: str = Field(default="openai", alias="LLM_PROVIDER")
-    openai_api_key: str = Field(alias="OPENAI_API_KEY")
-    openai_model: str = Field(default="gpt-4.1-mini", alias="OPENAI_MODEL")
+    ai_api_key: str = Field(alias="AI_API_KEY")
+    ai_model: str = Field(default="gpt-4.1-mini", alias="AI_MODEL")
     openai_temperature: float = Field(default=0.0, alias="OPENAI_TEMPERATURE")
 
     # Optimizer behavior

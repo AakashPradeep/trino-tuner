@@ -67,15 +67,15 @@ class LLMClient:
         if provider == "openai":
             from langchain_openai import ChatOpenAI
             return ChatOpenAI(
-                api_key=s.openai_api_key,
-                model=s.openai_model,
+                api_key=s.ai_api_key,
+                model=s.ai_model,
                 temperature=s.openai_temperature,
             )
 
         if provider == "azure_openai":
             from langchain_openai import AzureChatOpenAI
             return AzureChatOpenAI(
-                api_key=s.azure_openai_api_key,
+                api_key=s.ai_api_key,
                 azure_endpoint=s.azure_openai_endpoint,
                 azure_deployment=s.azure_openai_deployment,
                 api_version=s.azure_openai_api_version,
@@ -85,16 +85,16 @@ class LLMClient:
         if provider == "anthropic":
             from langchain_anthropic import ChatAnthropic
             return ChatAnthropic(
-                api_key=s.anthropic_api_key,
-                model=s.anthropic_model,
+                api_key=s.ai_api_key,
+                model=s.ai_model,
                 temperature=getattr(s, "anthropic_temperature", s.openai_temperature),
             )
 
         if provider == "gemini":
             from langchain_google_genai import ChatGoogleGenerativeAI
             return ChatGoogleGenerativeAI(
-                google_api_key=s.gemini_api_key,
-                model=s.gemini_model,
+                google_api_key=s.ai_api_key,
+                model=s.ai_model,
                 temperature=getattr(s, "gemini_temperature", s.openai_temperature),
             )
 
