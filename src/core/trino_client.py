@@ -1,3 +1,6 @@
+"""
+Copyright (C) 2026 Aakash Pradeep
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass

@@ -235,7 +235,14 @@ SHOW TABLES FROM postgres.public;
 
 ## License
 
-MIT license
+```
+This project is dual-licensed:
+
+- **AGPL-3.0** for open-source use (see `LICENSE`), and
+- A **commercial license** for organizations that do not want AGPL obligations.
+
+For commercial licensing, contact: email2aakash@gmail.com
+```
 
 ## Disclaimer
 
